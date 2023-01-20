@@ -1,0 +1,365 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: arial;
+    background-color: #fcf5eb;
+
+}
+
+.container{
+    width: 1080px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Download_button{
+    background-color: #25d366;
+    color: #1c1e21;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1PX solid #1c1e21;
+    border-radius: 40%;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.Download_button span{
+    margin-left: 12px 0;
+}
+.Download_button::after{
+    content: "";
+    position: absolute;
+    background-color: #111 !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    top: 100%;
+    bottom: auto;
+    z-index: -1;
+    left: 0;
+    transition: 0.6s !important;
+    
+}
+.Download_button:hover{
+color: white;
+}
+.Download_button:hover::after{
+    top: 0%;
+    transform: scale(2);
+}
+.align_center{
+    align-items: center;
+}
+.links{
+    color: #1c1e21;
+}
+.links{
+    margin-left: 5px;
+}
+.links:hover{
+    color: #25d366;
+}
+.links .link_text{
+    position: relative;
+}
+.links .link_text::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
+nav{
+    padding: 30px 50px 20px 50px;
+}
+
+nav .logo, 
+nav .menu,
+nav .download-button-grp{
+    width: 33.33%;
+}
+
+nav .logo img{
+    width: 120px;
+}
+nav .download-button-grp ul li{
+    display: inline-block;
+}
+nav .menu ul li{
+    display: inline-block
+}
+nav .download-button-grp ul li a,
+nav .menu ul li a{
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 10px;
+    position: relative;
+    display: block;
+}
+nav .download-button-grp ul li a::after,
+nav .menu ul li a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+nav .download-button-grp ul li:hover a::after,
+nav .menu ul li:hover a::after{
+    width: 100px;
+}
+
+nav .download-button-grp ul{
+    text-align: right;
+}
+
+.download-button-grp ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#banner{
+    background-image: url(../image/banner.png);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: cale(100% - 100px);
+    margin: auto;
+    border-radius: 35px;
+}
+#banner .row{
+    align-items: center;
+    height: 750px;
+}
+.banner_cnt{
+    width: 30%;
+    color: white;
+}
+.banner_cnt h2{
+    font-size: 70px;
+}
+.banner_cnt p{
+    font-size: 18px;
+    margin: 12px 0;
+}
+.banner_cnt .Download_button::after{
+    background-color: #fff !important;
+}
+.banner_cnt .Download_button{
+    border: none;
+}
+.banner_cnt .Download_button:hover{
+    color: #111;
+}
+.banner_cnt .Download_button span{
+    margin-left: 10px;
+}
+.banner_float_images{
+    position: absolute;
+}
+.cupimage{
+    top: 300px;
+    right: 100px;
+}
+.image{
+    top: 350px;
+    right: 100px;
+}
+.recordimage{
+    top: 280px;
+    right: 100px;
+}
+.textimage{
+    top: 200px;
+    right: 250px;
+}
+.peopleimage{
+    height: 180px;
+    padding: 20px 30px;
+}
+#section.p{
+   font-size: 18px;
+}
+#conference.row{
+    align-items: center;
+    width: 70%;
+}
+#conference{
+    padding: 60px 0;
+}
+#conferenece .conferenece_img,
+#conferenece .conferenece_text{
+    width: 50%;
+}
+#conferenece .conferenece_img{
+    text-align: right;
+}
+#conferenece .conferenece_text h2{
+    font-size: 70px;
+    font-weight: 400;
+}
+#conferenece .conferenece_text p{
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+}
+#meet .row{
+    align-items: center;
+    
+}
+#meet{
+    background-color: #1c1e21;
+    color: #ffffff;
+}
+#meet{
+    padding: 60px 0;
+    
+}
+#meet .meet_img,
+#meet .meet_text{
+    width: 50%;
+}
+#meet .meet_img{
+    text-align: left;
+}
+#meet .meet_text h2{
+    font-size: 65px; 
+    font-weight: 400;  
+}
+#meet .meet_text h2 span{
+    color: #25d366;
+}
+#meet .meet_text p{
+    font-size: 20px;
+    letter-spacing: normal;
+}
+.links{
+    color: #ffff;
+}
+.links{
+    margin-left: 5px;
+}
+.links:hover{
+    color: #25d366;
+}
+.links .link_text{
+    position: relative;
+}
+.links .link_text::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+#conversation .row{
+    align-items: center;
+}
+#conversation{
+    background-color: #fcf5eb;
+    color: #1c1e21;
+}
+#conversation{
+    padding: 60px 0;
+}
+
+#conversation .conversation_text
+#conversation .conversation_img,{
+    width: 50px;
+}
+
+#conversation .conversation_text h2{
+    font-size: 65px;
+    font-weight: 400;  
+}
+#conversation .conversation_text p{
+    font-size: 20px;
+    letter-spacing: normal;
+}
+#conversation .conversation_img{
+    text-align: right;
+}
+.links{
+    color: #1c1e21;
+}
+.links{
+    margin-left: 5px;
+}
+.links:hover{
+    color: #25d366;
+}
+.links .link_text{
+    position: relative;
+}
+.links .link_text::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.message img{
+    top: 300px;
+    right: 100px;
+}
+#conferance3 .conferance3_text4 h2{
+    font-size: 65px; 
+    font-weight: 400;  
+}
+#conferance3 .conferance3_text4 p{
+    font-size: 20px;
+letter-spacing: normal;
+}
+#conferance3 .conferance3_image3{
+    top: 100px;
+    left: 50px;
+}
+#conferance3_float_image3{
+    position: absolute;
+}
+.image3{
+    top: 300px;
+    left: 300px;
+}
+#conferance4 .conferance4_text5 h2{
+    font-size: 65px; 
+    font-weight: 400;  
+}
+#conferance4 .conferance4_text5 p{
+    font-size: 20px;
+    letter-spacing: normal;
+}
+#menu2 .logo2 img{
+    width: 120px;
+}
+#menu2{
+    background-color: #1c1e21;
+}
